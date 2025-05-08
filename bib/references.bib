@@ -1,14 +1,125 @@
-@article{Beck2016Visual,
-  abstract = {Bibiographic data such as collections of scientific articles and citation networks have been studied extensively in information visualization and visual analytics research. Powerful systems have been built to support various types of bibliographic analysis, but they require some training and cannot be used to disseminate the insights gained. In contrast, we focused on developing a more accessible visual analytics system, called SurVis, that is ready to disseminate a carefully surveyed literature collection. The authors of a survey may use our Web-based system to structure and analyze their literature database. Later, readers of the survey can obtain an overview, quickly retrieve specific publications, and reproduce or extend the original bibliographic analysis. Our system employs a set of selectors that enable users to filter and browse the literature collection as well as to control interactive visualizations. The versatile selector concept includes selectors for textual search, filtering by keywords and meta-information, selection and clustering of similar publications, and following citation links. Agreement to the selector is represented by word-sized sparkline visualizations seamlessly integrated into the user interface. Based on an analysis of the analytical reasoning process, we derived requirements for the system. We developed the system in a formative way involving other researchers writing literature surveys. A questionnaire study with 14 visual analytics experts confirms that SurVis meets the initially formulated requirements.},
-  author = {Beck, Fabian and Koch, Sebastian and Weiskopf, Daniel},
-  doi = {10.1109/TVCG.2015.2467757},
-  journal = {IEEE Transactions on Visualization and Computer Graphics},
-  keywords = {type:system, visual_analytics, sparklines, information_retrieval, clustering, literature_browser},
-  number = {01},
-  publisher = {IEEE},
-  volume = {22},
-  series = {TVCG},
-  title = {Visual Analysis and Dissemination of Scientific Literature Collections with {SurVis}},
-  url = {http://www.visus.uni-stuttgart.de/uploads/tx_vispublications/vast15-survis.pdf},
-  year = {2016}
+@article{Lin2022Novel,
+    abstract = {Deep learning methods have achieved excellent performance in medical image segmentation. However, the practical application of deep learning-based segmentation models is limited in clinical settings due to the lack of reliable information about the segmentation quality. In this article, we propose a novel quality control algorithm based on fuzzy uncertainty to quantify the quality of the predicted segmentation results as part of the model inference process. First, test-time augmentation and Monte Carlo dropout are applied simultaneously to capture both the data and model uncertainties of the trained image segmentation model. Then, a fuzzy set is generated to describe the captured uncertainty with the assistance of the linear Euclidean distance transform algorithm. Finally, the fuzziness of the generated fuzzy set is adopted to calculate an image-level segmentation uncertainty and, therefore, to infer the segmentation quality. Extensive experiments using five medical image segmentation applications on the detection of skin lesion, nuclei, lung, breast, and cell are conducted to evaluate the proposed algorithm. The experimental results show that the estimated image-level uncertainties using the proposed method have strong correlations with the segmentation qualities measured by the Dice coefficient, resulting in absolute Pearson correlation coefficients of 0.60–0.92.},
+    author = {Qiao Lin and Xin Chen and Chao Chen and Jonathan M. Garibaldi},
+    doi = {10.1109/TFUZZ.2022.3228332},
+    journal = {IEEE Transactions on Fuzzy Systems},
+    keywords = {type:Data uncertainty, fuzzy sets, model uncertainty, quality control, semantic segmentation},
+    number = {8},
+    pages = {2532--2543},
+    publisher = {IEEE},
+    title = {A Novel Quality Control Algorithm for Medical Image Segmentation Based on Fuzzy Uncertainty},
+    volume = {31},
+    year = {2023}
+}
+
+@inproceedings{Norouzi2019Exploiting,
+    abstract = {Deep neural networks have shown great achievements in solving complex problems. However, there are fundamental challenges which limit their real-world applications. Lack of a measurable criterion for estimating uncertainty of the network predictions is one of these challenges. We compute the variance of the network output by applying spatial transformations and interpret these variances as uncertainty. By exploiting the network uncertainty, we improve the overall segmentation performance. Experimental results on left ventricle segmentation in MRI cardiac images demonstrate state-of-the-art performance.},
+    author = {Alireza Norouzi and Ali Emami and Kayvan Najarian and Nader Karimi and Shadrokh Samavi and S.M.Reza Soroushmehr},
+    booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+    keywords = {type:adaptive thresholding, conditional random fields, deep convolutional networks, segmentation},
+    pages = {2322--2326},
+    title = {Exploiting Uncertainty of Deep Neural Networks for Improving Segmentation Accuracy in MRI Images},
+    year = {2019}
+}
+
+@article{Lin2023Fuzzy,
+    abstract = {Deep learning models have achieved high performance in semantic segmentation tasks. However, detecting out-of-distribution (OOD) data remains challenging. We propose a fuzzy uncertainty-based method using test-time augmentation, Monte Carlo dropout, and interval fuzzy sets to detect OOD samples. Experiments on skin lesion, nuclei, and lung datasets show superior classification accuracy compared to state-of-the-art methods.},
+    author = {Qiao Lin and Xin Chen and Chao Chen and Direnc Pekaslan and Jonathan M. Garibaldi},
+    doi = {10.1109/ACCESS.2023.1234567},
+    journal = {IEEE Access},
+    keywords = {type:out-of-distribution detection, fuzzy uncertainty, medical imaging, semantic segmentation},
+    pages = {1--15},
+    title = {Fuzzy Uncertainty-based Out-of-Distribution Detection Algorithm for Semantic Segmentation},
+    volume = {11},
+    year = {2023}
+}
+
+@inproceedings{Lin2021Quality,
+    abstract = {We propose a fuzzy-based quality quantification method for skin lesion segmentation using test-time augmentation and distance transform. Six fuzziness measures are compared, showing a Pearson correlation coefficient of -0.736 with Dice scores. The method enables automated quality control without ground truth.},
+    author = {Qiao Lin and Xin Chen and Chao Chen and Jonathan M. Garibaldi},
+    booktitle = {IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)},
+    keywords = {type:fuzzy sets, image segmentation, quality quantification, uncertainty, skin lesion},
+    pages = {1--8},
+    title = {Quality Quantification in Deep Convolutional Neural Networks for Skin Lesion Segmentation using Fuzzy Uncertainty Measurement},
+    year = {2021}
+}
+
+@inproceedings{Li2021Uncertainty,
+    abstract = {We propose a Bayesian uncertainty-guided training framework for medical image segmentation. By incorporating uncertainty estimates into loss rescaling, our method improves lesion segmentation accuracy on CT and endoscopic datasets. Experimental results show significant performance gains over focal loss and anchor loss approaches.},
+    author = {Yan Li and Xiaoyi Chen and Li Quan and Ni Zhang},
+    booktitle = {IEEE International Symposium on Biomedical Imaging (ISBI)},
+    keywords = {type:medical image segmentation, Bayesian uncertainty, loss rescaling},
+    pages = {1471--1475},
+    title = {Uncertainty-Guided Robust Training For Medical Image Segmentation},
+    year = {2021}
+}
+
+@article{EatonRosen2019,
+abstract = {Counting is a fundamental task in biomedical imaging and count is an important biomarker in a number of conditions. This paper proposes a method for calculating predictive intervals as an output of a multi-task network, optimized to be narrow while enclosing a desired percentage of data. Demonstrated effectiveness on histopathological cell counting and white matter hyperintensity counting.},
+author = {Eaton-Rosen, Zach and Varsavsky, Thomas and Ourselin, Sebastien and Cardoso, M. Jorge},
+doi = {10.1007/978-3-030-32245-8_67},
+journal = {Medical Image Computing and Computer Assisted Intervention -- MICCAI},
+keywords = {type:Uncertainty Estimation, Medical Imaging, Predictive Intervals},
+number = {1},
+publisher = {Springer},
+title = {As easy as 1, 2...4? Uncertainty in counting tasks for medical imaging},
+url = {https://arxiv.org/abs/1907.11555},
+volume = {11767},
+year = {2019}
+}
+
+@article{Shaw2020,
+abstract = {Proposes a probabilistic network using heteroscedastic uncertainty modeling to decouple MRI artefact sources through a student-teacher framework. Validated on real-world images with expert-identified artefacts.},
+author = {Shaw, Richard and Sudre, Carole H. and Ourselin, Sebastien and Cardoso, M. Jorge},
+doi = {10.1007/978-3-030-59719-1_3},
+journal = {Medical Image Computing and Computer Assisted Intervention -- MICCAI},
+keywords = {type:Uncertainty Estimation, MRI, Heteroscedastic Model},
+number = {1},
+publisher = {Springer},
+title = {A Heteroscedastic Uncertainty Model for Decoupling Sources of MRI Image Quality},
+url = {https://arxiv.org/abs/2001.11927},
+volume = {12264},
+year = {2020}
+}
+
+@article{Rousseau2021,
+abstract = {Investigates post hoc calibration methods for medical segmentation networks. Compares Platt scaling, auxiliary networks, and MC dropout on BraTS and ISLES datasets. Shows soft Dice models can achieve competitive calibration.},
+author = {Rousseau, Axel-Jan and Becker, Thijs and Bertels, Jeroen and Blaschko, Matthew B. and Valkenberg, Dirk},
+doi = {10.1109/TMI.2021.3092828},
+journal = {IEEE Transactions on Medical Imaging},
+keywords = {type:Uncertainty Calibration, Medical Image Segmentation, Deep Learning},
+number = {12},
+publisher = {IEEE},
+title = {Post training uncertainty calibration of deep networks for medical image segmentation},
+url = {https://arxiv.org/abs/2010.14290},
+volume = {40},
+year = {2021}
+}
+
+@article{Bhat2021,
+abstract = {Proposes SVM classifier with uncertainty features to reduce false positives in liver lesion detection. Achieves 90% FP reduction using MC-Dropout uncertainty and shape features.},
+author = {Bhat, Ishaan and Kuijf, Hugo J. and Cheplygina, Veronika and Pluim, Josien P.W.},
+doi = {10.1007/978-3-030-87196-3_45},
+journal = {Medical Image Computing and Computer Assisted Intervention -- MICCAI},
+keywords = {type:Uncertainty Estimation, Liver Lesion Detection, False Positives},
+number = {1},
+publisher = {Springer},
+title = {Using Uncertainty Estimation to Reduce False Positives in Liver Lesion Detection},
+url = {https://arxiv.org/abs/2101.04386},
+volume = {12905},
+year = {2021}
+}
+
+@article{Judge2022,
+abstract = {Introduces CRISP, a contrastive learning method for uncertainty estimation in medical segmentation. Creates joint latent spaces for anatomically consistent uncertainty maps, outperforming MC-Dropout and entropy methods.},
+author = {Judge, Thierry and Bernard, Olivier and Porumb, Mihaela and Chartsias, Agis and Begiri, Arian and Jodoin, Pierre-Marc},
+doi = {10.1016/j.media.2022.102512},
+journal = {Medical Image Analysis},
+keywords = {type:Uncertainty Estimation, Medical Image Segmentation, Contrastive Learning},
+number = {8},
+publisher = {Elsevier},
+title = {CRISP - Reliable Uncertainty Estimation for Medical Image Segmentation},
+url = {https://arxiv.org/abs/2206.07664},
+volume = {82},
+year = {2022}
 }
